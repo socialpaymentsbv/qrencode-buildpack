@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+echo "qrencode"
+exit 0

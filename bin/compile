@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+echo "-----&gt; Installing qrencode"
+# change to the the BUILD_DIR ($1)
+cd $1
+curl http://chargingio.s3.amazonaws.com/bin/qrencode.tar.gz -s -O -ssl3
+mkdir -p vendor/qrencode
+tar -C vendor/qrencode -xvf qrencode.tar.gz
